@@ -5,5 +5,23 @@
   "main": "index.js",
   "repository": "https://github.com/MoTheNerd/bits",
   "author": "Mohammad Al-Ahdal <mo@mohammad.dev>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {},
+  "dependencies": {
+    "css-loader": "^3.2.0",
+    "node-sass": "^4.12.0",
+    "nodemon": "^1.19.1",
+    "path": "^0.12.7",
+    "prop-types": "^15.7.2",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "sass-loader": "^7.3.1",
+    "style-loader": "^1.0.0",
+    "styled-components": "^4.3.2",
+    "ts-loader": "^6.0.4",
+    "typescript": "^3.6.2",
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.3.7",
+    "webpack-dev-server": "^3.8.0"
+  }
 }
