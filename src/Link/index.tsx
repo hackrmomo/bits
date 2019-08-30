@@ -3,13 +3,13 @@ import PropTypes from 'prop-types'
 
 export class Link extends Component {
     static propTypes = {
-
+        
     }
 
     render() {
         return (
             <div>
-                This is a temporary link
+                This is a temporary link :)
             </div>
         )
     }
