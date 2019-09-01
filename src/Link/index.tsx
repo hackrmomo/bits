@@ -1,18 +1,35 @@
-import React, { Component } from 'react'
-import PropTypes from 'prop-types'
+import * as React from 'react';
+import styled from 'styled-components'
+import ThemeObject, { } from '../theme'
 
-export class Link extends Component {
-    static propTypes = {
-        
-    }
 
-    render() {
-        return (
-            <div>
-                This is a temporary link :)
-            </div>
-        )
-    }
+export interface ILinkProps {
+  href: String | undefined;
+  theme: ThemeObject;
 }
 
-export default Link
+export interface ILinkState {
+
+}
+
+export default class Link extends React.Component<ILinkProps, ILinkState> {
+  constructor(props: ILinkProps) {
+    super(props);
+
+    this.state = {
+    }
+  }
+
+  public render() {
+    return (
+      <StyledLink theme={this.props.theme} href={`${this.props.href}`} >
+        {this.props.children}
+      </StyledLink>
+    );
+  }
+}
+
+const StyledLink = styled.a`
+  border: none;
+  text-decoration: ${props => props.theme && props.theme.font && props.theme.font.isUnderlined ? `underlined` : 'none'}
+`
