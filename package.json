@@ -1,10 +1,14 @@
 {
   "name": "@mo_dev/bits",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "React Component Library designed and coded by Mohammad Al-Ahdal for mohammad.dev",
   "main": "dist/bundle.js",
   "repository": "https://github.com/MoTheNerd/bits",
   "author": "Mohammad Al-Ahdal <mo@mohammad.dev>",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
   "license": "MIT",
   "scripts": {
     "start": "webpack -p --watch",

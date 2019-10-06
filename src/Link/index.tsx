@@ -31,5 +31,8 @@ export default class Link extends React.Component<ILinkProps, ILinkState> {
 
 const StyledLink = styled.a`
   border: none;
-  text-decoration: ${props => props.theme && props.theme.font && props.theme.font.isUnderlined ? `underlined` : 'none'}
+  text-decoration: ${props => props.theme && props.theme.font && props.theme.font.isUnderlined ? `underlined` : 'none'};
+  width: unset !important;
+  max-width: unset !important;
+  min-width: unset !important;
 `
