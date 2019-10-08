@@ -1,22 +1,18 @@
 import * as React from 'react';
 import styled from 'styled-components'
-import ThemeObject, { } from '../theme'
-import { number } from 'prop-types';
 
-
-export interface ILinkProps {
+export interface IButtonGroupProps {
   buttonLabels: [string];
   buttonFunctions: [Function];
   startingIndex: number | undefined;
 }
 
-export interface ILinkState {
+export interface IButtonGroupState {
   currentSelectedIndex: number
-
 }
 
-export default class Link extends React.Component<ILinkProps, ILinkState> {
-  constructor(props: ILinkProps) {
+export default class ButtonGroup extends React.Component<IButtonGroupProps, IButtonGroupState> {
+  constructor(props: IButtonGroupProps) {
     super(props);
 
     //@ts-ignore
