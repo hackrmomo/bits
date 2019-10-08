@@ -1,6 +1,6 @@
 {
   "name": "@mo_dev/bits",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "React Component Library designed and coded by Mohammad Al-Ahdal for mohammad.dev",
   "main": "dist/bundle.js",
   "repository": "https://github.com/MoTheNerd/bits",
